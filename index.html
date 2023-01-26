@@ -10,10 +10,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
 </script>
     <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    <h1>QR CODE GENERATOR</h1>
+    <header>
+        <h1>QR CODE GENERATOR</h1>
+    </header>
+    
     <form id="qr-generator">
         <input type="text" name="url" id="url" placeholder="Enter a Url">
 
@@ -29,9 +33,9 @@
 
         <button type="submit">Generate QR</button>
     </form>
-
+    
     <div style="margin:20px" id="qrcode"></div>
 
-
+    <div id="generated"></div>
 </body>
 </html>

@@ -1,0 +1,19 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+/* header {
+    padding: 20px;
+    margin-bottom: ;
+    background-color:chocolate
+
+} */
+
+.linkstyle{
+    background-color: orange;
+    border-radius: 4px;
+    color:white;
+    font-weight: bold;
+}
+

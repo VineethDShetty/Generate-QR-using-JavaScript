@@ -20,7 +20,29 @@ const GenerateSubmit=(e)=>{
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H
         });
+
+        setTimeout(()=>{
+        const SaveUrl=qr.querySelector('img').src;
+        createSaveBtn(SaveUrl);
+        },2000)
     }
+
+}
+
+const createSaveBtn= (SaveUrl)=>{
+    const savelink=document.getElementById('save-link');
+    if(savelink){
+        savelink.remove();
+    }
+
+    const link=document.createElement('a');
+    link.id='save-link';
+    // link.className=''
+    link.href=SaveUrl;
+    link.download='qrcode';
+    link.innerHTML='Save Image'
+    link.classList='linkstyle'
+    document.getElementById('generated').appendChild(link)
 
 }
 form.addEventListener('submit',GenerateSubmit);
