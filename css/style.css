@@ -1,5 +1,6 @@
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     
 }
 
@@ -9,10 +10,59 @@
     background-color:chocolate
 
 } */
-
+.section {
+    display: flex;
+    justify-content: center;
+    
+}
 .linkstyle{
     background-color: orange;
     border-radius: 4px;
     color:white;
     font-weight: bold;
+    margin-top: 24px;
+    margin-left: 100px;
+}
+form {
+    width: 300px;
+    padding-top: 60px;
+    padding-left: 30px;
+    height: 200px;
+    background-color: rgb(140, 147, 147);
+
+    
+}
+
+input {
+    width: 200px;
+    border-radius: 4px;
+    height:24px;
+    border-style: 1px solid;
+}
+
+select {
+    width:200px;
+    border-radius: 4px;
+    height:24px;
+    border-style: 1px solid;
+}
+.generatebutton {
+    width:100px;
+    margin-top: 24px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: rgb(15, 223, 67);
+    color:rgb(17, 17, 17);
+    height: 32px;
+    cursor: pointer;
+}
+
+.generatebutton:hover{
+    background-color: rgb(4, 148, 40);;
+}
+
+.qrsection {
+    margin-top:24px;
+    
+    
 }

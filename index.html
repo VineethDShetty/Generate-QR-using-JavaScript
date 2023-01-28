@@ -17,10 +17,14 @@
     <header>
         <h1>QR CODE GENERATOR</h1>
     </header>
-    
+    <main class="section">
     <form id="qr-generator">
+        <div style="display:flex;">
+        <label for="" style="margin-right:8px">Url</label>
         <input type="text" name="url" id="url" placeholder="Enter a Url">
-
+        </div>
+        <div style="display:flex;margin-top:16px">
+        <label for="" style="margin-right:8px; ">Size</label>
         <select id="size">
             <option value="100">100X100</option>
             <option value="200">200X200</option>
@@ -30,12 +34,22 @@
             <option value="600">600X600</option>
             <option value="700">700X700</option>
         </select>
-
-        <button type="submit">Generate QR</button>
+        </div>
+        <button class="generatebutton" type="submit">Generate QR</button>
     </form>
     
-    <div style="margin:20px" id="qrcode"></div>
+    
 
-    <div id="generated"></div>
+    </main>
+    <main class="section qrsection">
+    <div style="flex-direction:column;">
+    <div  id="qrcode"></div>
+
+    <div id="generated" style="margin-top:24px;"></div>
+    </div>
+   </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>

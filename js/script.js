@@ -5,9 +5,10 @@ const qr=document.getElementById('qrcode');
 const clearUI=()=>{
     
     const savelink=document.getElementById('save-link');
+    qr.innerHTML='';
     // Checking if the element save image is created and if created clear the ui
     if(savelink){
-        qr.innerHTML='';
+        
         savelink.remove();
     }
 }
@@ -47,7 +48,7 @@ const GenerateSubmit=(e)=>{
 }
 
 const createSaveBtn= (SaveUrl)=>{
-    clearUI()
+    
     // Creating a link tag 
     const link=document.createElement('a');
     // Specifying the id ,download name , Inner name and styling for the button 
