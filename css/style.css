@@ -3,6 +3,10 @@
 
     
 }
+header {
+    display: flex;
+    justify-content: center;
+}
 
 /* header {
     padding: 20px;
@@ -16,12 +20,15 @@
     
 }
 .linkstyle{
-    background-color: orange;
+    padding: 8px;
+    background-color: rgb(15, 223, 67);
     border-radius: 4px;
-    color:white;
-    font-weight: bold;
+    color:rgb(17, 17, 17);
     margin-top: 24px;
     margin-left: 100px;
+}
+.linkstyle:hover{
+    background-color: rgb(4, 148, 40);
 }
 form {
     width: 300px;
@@ -48,17 +55,19 @@ select {
 }
 .generatebutton {
     width:100px;
-    margin-top: 24px;
+    margin-top: 40px;
     border-radius: 4px;
     border-style: none;
     background-color: rgb(15, 223, 67);
     color:rgb(17, 17, 17);
     height: 32px;
     cursor: pointer;
+    float: right;
+    margin-right: 24px;
 }
 
 .generatebutton:hover{
-    background-color: rgb(4, 148, 40);;
+    background-color: rgb(4, 148, 40);
 }
 
 .qrsection {
